@@ -24,13 +24,13 @@ console.log(sumWithoutPenny - remainder);
 document.writeln(`<p>Сума товарів округлену до сотень: ${sumWithoutPenny - remainder}</p>`);
 
 if (sumPrice % 2 === 0){
-    console.log(true);
-    document.writeln(`<p>Виведення булевого значення: чи є сума всіх товарів (округлена в меншу сторону) парним
-    чи непарним числом?(${true})</p>`);
-} else {
+    console.log(false);
     document.writeln(`<p>Виведення булевого значення: чи є сума всіх товарів (округлена в меншу сторону) парним
     чи непарним числом?(${false})</p>`);
-    console.log (false);
+} else {
+    document.writeln(`<p>Виведення булевого значення: чи є сума всіх товарів (округлена в меншу сторону) парним
+    чи непарним числом?(${true})</p>`);
+    console.log (true);
 }
 
 const customerPayment = 500 - sumPrice;
