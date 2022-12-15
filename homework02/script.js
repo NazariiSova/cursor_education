@@ -16,7 +16,7 @@ let sum = 0;
  
 for (let i = N; i <= M; i++) { 
   if (trueOrFalse) { 
-    if (i % 2 === 0) { 
+    if (i % 2 !== 0) { 
       sum += i; 
     } 
   } else { 
