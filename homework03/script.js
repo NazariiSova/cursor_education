@@ -92,3 +92,31 @@ function deleteLetters(letter, word) {
 }
 
 document.writeln(`<p>Функція 6 (Завдання XI) результат : ${deleteLetters('a', "blablabla")}</p>`)
+
+
+function isPalyndrom(word) {
+let direct ='';
+let reversed ='';
+for (let ch of word){
+    if(ch !== ' '){
+        direct += ch;
+    }
+}
+
+for (let ch of word){
+    if(ch !== ' '){
+        reversed = ch + reversed;
+    }
+}
+
+if (direct.toLowerCase() === reversed.toLowerCase()){
+    return true;
+}
+else
+{
+    return false;
+}
+
+}
+
+document.writeln(`<p>Функція 7 (Завдання XII) результат : ${isPalyndrom("кокос")}</p>`)
