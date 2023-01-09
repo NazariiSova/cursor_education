@@ -61,7 +61,7 @@ getDividedByFive(6, 2, 55, 11, 78, 2, 55, 77, 57, 87, 23, 2, 56, 3, 2)
 
 function replaceBadWords(string, addBadWord) {
     const badWords = ["fuck", "shit"];
-    if (addBadWord.length > 0) {
+    if (addBadWord.length > 1) {
         badWords.push(addBadWord)
     }
         let res = string; 
